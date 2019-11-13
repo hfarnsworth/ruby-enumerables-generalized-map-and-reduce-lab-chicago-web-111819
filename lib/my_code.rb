@@ -25,12 +25,11 @@ def reduce(array, starting_point = 0)
         memo = true
       end
     else 
-      n = false
-      memo = true
-      p yield(memo,n)
+      memo = false
     end
     index += 1 
   end
   
+  yield(memo,n)
   n
 end
