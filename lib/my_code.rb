@@ -24,7 +24,8 @@ def reduce(array, starting_point = 0)
       else
         memo = true
       end
-    else 
+    else
+      n = true
       memo = false
       p yield(memo,n)
     end
