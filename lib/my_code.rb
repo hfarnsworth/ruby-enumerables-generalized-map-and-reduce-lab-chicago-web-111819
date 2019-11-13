@@ -23,7 +23,6 @@ def reduce(array, starting_point = 0)
         n += memo
       else
         memo = true
-        yield(memo, n)
       end
     else 
       memo = false
