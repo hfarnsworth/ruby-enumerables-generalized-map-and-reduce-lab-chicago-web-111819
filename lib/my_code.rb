@@ -25,6 +25,7 @@ def reduce(array, starting_point = 0)
       end
     else 
       memo = false
+      n = true
       yield(memo,n)
     end
     index += 1 
