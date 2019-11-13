@@ -25,7 +25,7 @@ def reduce(array, starting_point = 0)
         memo = true
       end
     else 
-      n = false
+      n = true
       memo = false
     end
     index += 1 
