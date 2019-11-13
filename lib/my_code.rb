@@ -24,7 +24,7 @@ def reduce(array, starting_point = 0)
       else
       end
     else 
-      yield(true,false)
+      return false
     end
     index += 1 
   end
