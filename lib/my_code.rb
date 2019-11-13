@@ -24,14 +24,13 @@ def reduce(array, starting_point = 0)
       else
         memo = true
       end
-    else
-      n = true
-      memo = false
+    else 
+      n = false
+      memo = true
+      p yield(memo,n)
     end
     index += 1 
   end
-  
-  yield(memo,n)
   
   n
 end
