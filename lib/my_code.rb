@@ -22,15 +22,14 @@ def reduce(array, starting_point = 0)
       if memo.is_a? Integer 
         n += memo
       else
-        n = nil
         memo = true
       end
-    else
+    else 
       memo = false
+      p yield(memo,n)
     end
     index += 1 
   end
   
-  yield(memo,n)
   n
 end
