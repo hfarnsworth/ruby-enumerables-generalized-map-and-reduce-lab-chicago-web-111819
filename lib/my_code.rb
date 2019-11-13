@@ -25,9 +25,10 @@ def reduce(array, starting_point = 0)
       end
     else 
       memo = false
+      yield(memo,n)
     end
     index += 1 
   end
   
-  yield(n, memo)
+  n
 end
