@@ -22,10 +22,10 @@ def reduce(array, starting_point = 0)
       if memo.is_a? Integer 
         n += memo
       else
-        n = true
         memo = true
       end
     else
+      n = true
       memo = false
     end
     index += 1 
